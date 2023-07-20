@@ -16,7 +16,10 @@ conda env create --file environment.yml -n FaceRecon
 
 
 ## Usage for FPRG Project 03
-
+### Train
+tbd
+### Test / Inference
+tbd
 
 ## 
  
