@@ -209,6 +209,27 @@ def load_images_from_folder(folder):
 
 if __name__ == '__main__':
 
+    # Load test data
+
+    print('load new test data')
+
+    path = 'data/pkl/'
+    pickle_path = path
+    images_resized_normal1_2_name = 'images_resized_normal1_2.pkl'
+    images_resized_occluded1_2_name = 'images_resized_occluded1_2.pkl'
+
+    pickle_in = open(os.path.join(path, images_resized_normal1_2_name), "rb")
+    images_resized_normal1_2 = pickle.load(pickle_in)
+
+    print(images_resized_normal1_2_name.shape)
+    images_resized_normal = []
+
+    pickle_in = open(os.path.join(path, images_resized_occluded1_2_name), "rb")
+    images_resized_occluded1_2 = pickle.load(pickle_in)
+
+    y = images_resized_normal1_2_name
+    x = images_resized_occluded1_2
+
     ########
     ########
     # Generate the GAN #
