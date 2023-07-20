@@ -11,7 +11,7 @@ Tested with Ubuntu 22.04. GPU: RTX3090 24GBVRAM
 Use environment.yml to generate conda environment with
 
 ```
-conda create --name MyEnvironment --file environment.yml
+conda env create --file environment.yml -n FaceRecon
 ```
 
 
