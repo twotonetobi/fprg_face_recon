@@ -17,7 +17,7 @@ conda env create --file environment.yml -n FaceRecon
 
 ## Usage for FPRG Project 03
 ### Train
-The ```train_64.py``` reads the files of a given folder pair of original and occluded face images. 
+The ```train_64.py``` reads the files of a given folder pair of original and occluded face images, resizes them to 64x64 Pixel, saves this image files as one .pkl file and starts the training.
 
 ### Test / Inference
 The ```test_64.py``` reads the image files as resized .pkl files and uses the occluded one to generate reconstructed images. Which images can be defined in the code. All generated images will be saved as .pkl file. To make images out of the .pkl file use ```write_pkl_file_to_jpgs.py```.
